@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- Indica que es un documento HTML, de lo contrario si no lo
+ponemos, lo interpretaria como codigo antiguo antes de los 90's Quirks mode,
+aparecerian codigos antiguos -->
+<html lang="es">
+
+<!--invoca al archivo style.css que contiene todas las configuraciones de estilos de
+la página-->
+<link rel="stylesheet" href="styles.css">
+
+<!--Encabezado, el valor atributo id invoca a una funcion del archivo style.css para
+dar el formato del menu-->
+<header id="mi-encabezado">
+
+<title>Diseño de arquitectura de software</title>
+<!--Creacion del menú utilizando Nav-->
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="about.html">Acerca de </a></li>
+<li><a href="contact.html">Contacto</a></li>
+</ul>
+</nav>
+
+<!--Texto del encabezado-->
+<h1>Diseño de arquitectura de software</h1>
+<p>Bienvenidos</p>
+
+</header>
+
+<!--Cuerpo del HTML. Las configuraciones de estilos se encuentran en el archivo
+style.css-->
+<body>
+
+<main>
+<!--*CONFIGURACION DEL TEXTO EN EL CUERPO. El tamño y tipo de letra
+estan especificados en el archivo style.css*-->
+<section class="contenido">
+<h2> <span style="background-color: rgb(208, 209, 245);" ;>¿Que es el diseño de arquitectura de software?</span></h2>
+<tr><td> <hr>
+</hr>
+<p>
+El diseño de arquitectura de software implica tomar decisiones estratégicas que determinan cómo se organizará y comportará un sistema a lo largo del tiempo. Estas decisiones no solo afectan la estructura del código, sino también aspectos como el rendimiento, la seguridad y la capacidad de adaptación ante cambios. Una arquitectura bien diseñada permite anticipar problemas futuros y reducir el costo de mantenimiento.</p>
+<p>
+En este proceso, uno de los aspectos más importantes es el análisis de los llamados “trade-offs” o compromisos. Cada decisión arquitectónica implica ventajas y desventajas; por ejemplo, un sistema altamente distribuido puede ser más escalable, pero también más complejo de implementar y mantener. Por ello, el arquitecto debe evaluar cuidadosamente qué características son prioritarias según las necesidades del proyecto.</p>
+
+
+<p>
+Otro elemento clave es la definición de los atributos de calidad, los cuales guían el diseño del sistema. Estos atributos incluyen el rendimiento, la disponibilidad, la seguridad y la escalabilidad. Dependiendo del tipo de aplicación, algunos atributos tendrán mayor importancia que otros, lo que influye directamente en la selección de tecnologías y patrones arquitectónicos.</p>
+<p>
+Además, el diseño arquitectónico moderno suele apoyarse en enfoques como la arquitectura basada en eventos, donde los sistemas reaccionan a cambios o acciones en tiempo real. Para implementar este tipo de soluciones, se utilizan herramientas como Apache Kafka, que permiten gestionar grandes volúmenes de datos y eventos de forma eficiente.</p>
+<p>
+La evolución constante del software ha llevado al desarrollo de arquitecturas más flexibles, capaces de adaptarse a cambios sin afectar el funcionamiento general del sistema. Esto se conoce como arquitectura evolutiva, y se apoya en prácticas como la integración continua y el uso de herramientas como GitHub Actions, que facilitan la actualización constante del software.</p>
+<p>
+Por otra parte, en sistemas modernos es común trabajar con arquitecturas distribuidas, donde los diferentes componentes se ejecutan en múltiples servidores o entornos. Para gestionar esta complejidad, se utilizan tecnologías como Docker y Kubernetes, que permiten automatizar el despliegue, la escalabilidad y la gestión de los servicios.</p>
+<p>
+Finalmente, es importante considerar los errores comunes en el diseño arquitectónico, conocidos como antipatrones. Estos incluyen estructuras desorganizadas o excesivamente complejas que dificultan el mantenimiento del sistema. Evitar estos problemas requiere una planificación adecuada y una comprensión clara de los objetivos del software desde el inicio del proyecto.</p>
+
+</td></tr>
+
+</section>
+</main>
+
+<!--Pie de pagina-->
+<!--el atributo Class="footer" invoca a una funcion del archivo style.css para dar
+el formato del pie de pagina-->
+<div class="footer">Derechos reservados © 2026 Kevin Trigueros</div>
+
+<!--Invoca al archivo script.js que contiene la funcion que controla el
+comportamiento del menu-->
+
+<script src="script.js"></script>
+<!--Probar commit-repositorios-->
+
+</body>
+</html>

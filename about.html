@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Indica que es un documento HTML, de lo contrario si no lo
+ponemos, lo interpretaria como codigo antiguo antes de los 90's Quirks mode,
+aparecerian codigos antiguos -->
+<html lang="es">
+
+<!--invoca al archivo style.css que contiene todas las configuraciones de estilos de
+la página-->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Encabezado, el valor atributo id invoca a una funcion del archivo style.css
+para dar el formato del menu -->
+<header id="mi-encabezado">
+
+<title>Diseño de arquitectura de software</title>
+<!--Creacion del menú utilizando Nav-->
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="about.html">Acerca de </a></li>
+<li><a href="contact.html">Contacto</a></li>
+</ul>
+</nav>
+
+<!--Texto del encabezado-->
+<h1>Diseño de arquitectura de software</h1>
+<p>Acerca de</p>
+
+</header>
+
+<!--Cuerpo del HTML. Las configuraciones de estilos se encuentran en el archivo
+style.css-->
+<body>
+
+<main>
+
+<!--*CONFIGURACION DEL TEXTO EN EL CUERPO. El tamño y tipo de letra
+estan especificados en el archivo style.css*-->
+<section class="contenido">
+<h2> <span style="background-color:rgb(208, 209, 245);" ;>Herramientas utilizadas en el diseño de sistemas
+</span>
+<tr><td> <hr>
+</hr></h2>
+<p><h3>Contenedores(Doker)</h3></p>
+<p>Las herramientas de contenedorización como Docker permiten empaquetar aplicaciones junto con todas sus dependencias en entornos aislados. Esto asegura que el software funcione de la misma manera sin importar dónde se ejecute, ya sea en una computadora local o en un servidor en la nube. Además, facilita la portabilidad y reduce problemas de compatibilidad.</p>
+<p><h3>Orquestación de contenedores (Kubernetes)</h3></p>
+<p>La orquestación de contenedores se realiza con herramientas como Kubernetes, que permiten gestionar múltiples contenedores de forma automática. Estas plataformas controlan el despliegue, la escalabilidad y la disponibilidad de las aplicaciones, asegurando que el sistema continúe funcionando incluso ante fallos.</p>
+<p><h3>Integración y despliegue continuo</h3></p>
+<p>Las herramientas de integración y despliegue continuo automatizan el proceso de desarrollo y publicación del software. Por ejemplo, Jenkins y GitHub Actions permiten ejecutar pruebas, detectar errores y desplegar nuevas versiones sin intervención manual, lo que mejora la calidad y velocidad del desarrollo.</p>
+<p><h3>Plataformas en la nube</h3></p>
+<p>Las plataformas en la nube como Amazon Web Services, Microsoft Azure y Google Cloud Platform ofrecen infraestructura para alojar aplicaciones, bases de datos y servicios. Estas herramientas permiten escalar sistemas fácilmente y reducir la necesidad de mantener servidores físicos.</p>
+<P><h3>Bases de datos</h3></P>
+<p>Las bases de datos son esenciales para almacenar y gestionar la información de un sistema. Herramientas como MySQL se utilizan para datos estructurados, mientras que MongoDB permite manejar información más flexible. La elección depende del tipo de aplicación y sus necesidades.</p>
+<p><h3>Control de versiones</h3></p>
+<P>El control de versiones es fundamental para el trabajo colaborativo. Herramientas como Git y plataformas como GitHub permiten registrar cambios en el código, trabajar en equipo y mantener un historial del desarrollo del software.</P>
+<p><h3>Sistemas de mensajería</h3></p>
+<p>Las herramientas de mensajería permiten la comunicación entre diferentes componentes de un sistema. Tecnologías como Apache Kafka y RabbitMQ facilitan el envío de datos mediante eventos, lo que mejora la escalabilidad y la eficiencia en sistemas distribuidos.</p>
+<p><h3>Monitoreo y observabilidad</h3></p>
+<p>El monitoreo del sistema es clave para detectar fallos y mejorar el rendimiento. Herramientas como Prometheus y Grafana permiten recopilar métricas, visualizar datos y analizar el comportamiento del sistema en tiempo real.</p>
+</td></tr>
+
+</section>
+</main>
+
+<!--Pie de pagina-->
+<!--el atributo Class="footer" invoca a una funcion del archivo style.css para dar
+el formato del pie de pagina-->
+<div class="footer">Derechos reservados © 2026 Kevin Trigueros</div>
+
+<!--Invoca al archivo script.js que contiene la funcion que controla el
+comportamiento del menu-->
+<script src="script.js"></script>
+</body>
+</html>
